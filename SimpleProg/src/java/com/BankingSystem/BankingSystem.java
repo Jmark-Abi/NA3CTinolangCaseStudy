@@ -26,6 +26,7 @@ public class BankingSystem {
      public void setWithdraw(int money){
          this.money = money;
      }
+     
      //2
      @WebMethod
      public int Withdraw(){
@@ -61,5 +62,17 @@ public class BankingSystem {
             System.out.println("You successfully transferred: "+ money);
             System.out.println("your current balance now is: "+ balance);
         }
+    }
+    
+     //Custodio, Rafael
+    //6
+    @WebMethod
+    public void setLoan(int loanMoney){
+        this.loanMoney = loanMoney;
+    }
+    //7
+    public void loan(){
+            balance = loanMoney + money;
+            System.out.println("Your current balance is: " + balance);
     }
 }
