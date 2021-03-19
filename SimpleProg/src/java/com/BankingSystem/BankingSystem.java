@@ -75,4 +75,20 @@ public class BankingSystem {
             balance = loanMoney + money;
             System.out.println("Your current balance is: " + balance);
     }
+    
+    //Valencia, Serge B.
+    //8
+    @WebMethod
+    public void setDeposit(int money){
+        this.money = money;
+    }
+    //9
+    public int Deposit(){
+        if ( money < 0){
+             System.out.println("Invalid Input");}
+          else {
+              balance += money;        
+        }
+        return balance;
+    }
 }
