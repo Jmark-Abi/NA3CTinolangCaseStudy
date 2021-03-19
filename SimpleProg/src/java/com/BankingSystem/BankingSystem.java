@@ -34,4 +34,8 @@ public class BankingSystem {
          }
          return balance;
      }
+     //Viray,Wilson
+     public void checkBalance_Transaction(){
+        System.out.println("Good Day Ma'am/Sir your current balance is: "+ balance);
+     }
 }
