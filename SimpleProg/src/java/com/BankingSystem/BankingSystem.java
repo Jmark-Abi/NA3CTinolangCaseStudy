@@ -20,11 +20,13 @@ public class BankingSystem {
     private int loanMoney;
     private int durationPayment;
     
+    //Fabros, John Mark
+    //1
      @WebMethod
      public void setWithdraw(int money){
          this.money = money;
      }
-     
+     //2
      @WebMethod
      public int Withdraw(){
          if (balance == 0 || balance < money){
@@ -34,8 +36,30 @@ public class BankingSystem {
          }
          return balance;
      }
+     
      //Viray,Wilson
+     //3
+     @WebMethod
      public void checkBalance_Transaction(){
         System.out.println("Good Day Ma'am/Sir your current balance is: "+ balance);
      }
+    
+    //Barnachea, Necie
+    //4
+    @WebMethod
+    public void setTransferMoney(int money){
+        this.money = money;
+    }
+    //5
+    @WebMethod
+    public void TransferMoney(){
+        if(balance == 0 || balance < money){
+            System.out.println("You dont have enough balance to transfer");
+        }
+        else{
+            balance -= money;
+            System.out.println("You successfully transferred: "+ money);
+            System.out.println("your current balance now is: "+ balance);
+        }
+    }
 }
