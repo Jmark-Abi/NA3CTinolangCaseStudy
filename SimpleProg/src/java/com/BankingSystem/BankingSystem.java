@@ -94,3 +94,13 @@ public class BankingSystem {
         return balance;
     }
 }
+     @WebMethod
+    public double interest(){
+        double interest = (loanMoney * 0.05) * durationPayment;
+        return interest;
+    }
+    
+    @WebMethod
+    public void getPaymentDuration(int durationPaymet){
+        this. durationPayment = durationPayment;
+    }
