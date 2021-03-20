@@ -71,6 +71,7 @@ public class BankingSystem {
         this.loanMoney = loanMoney;
     }
     //7
+    @WebMethod
     public void loan(){
             balance = loanMoney + money;
             System.out.println("Your current balance is: " + balance);
@@ -83,6 +84,7 @@ public class BankingSystem {
         this.money = money;
     }
     //9
+    @WebMethod
     public int Deposit(){
         if ( money < 0){
              System.out.println("Invalid Input");}
